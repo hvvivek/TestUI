@@ -580,6 +580,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: white;
     float: left;
     margin-right: 1em;
+    cursor: pointer;
 }
 
 #draggable>div:nth-of-type(1)
@@ -670,3 +671,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* DRAGGABLE PANE END */
+
+/* CANVAS WINDOWS START */
+
+/* CANVAS WINDOWS END */

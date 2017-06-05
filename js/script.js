@@ -72,3 +72,10 @@ function onClickRegionGrow()
     var div = document.getElementById('draggable-pane');
     div.style.visibility = 'visible';
 }
+
+// Code to dismiss Draggable Pane
+function dismissDraggablePane()
+{
+    var div = document.getElementById('draggable-pane');
+    div.style.visibility = 'hidden';
+}
