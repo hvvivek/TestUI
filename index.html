@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- User Stylesheet for override -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul id="close-window" class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-close.png"></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-undo-tool.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-redo-tool.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-undo-list.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-refresh.png"></a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-inspect-tool.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-pan-tool.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-zoom-tool.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-zoom-fit.png"></a></li>
+            </ul>
+
+            <ul id="window-layout" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WINDOW LAYOUT</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Layout 1</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Layout 2</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Layout 3</a></li>
+                </ul>
+                </li>
+            </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- MAIN CONTENT START -->
+    <section id="main-content" class="container-fluid">
+
+        <!-- VIEWER SECTION START -->
+        <section id="viewer-container" class="col-xs-9">
+            <div id="window1" class="col-xs-6">
+
+            </div>
+
+            <div id="window2"  class="col-xs-6">
+
+            </div>
+
+            <div id="window3"  class="col-xs-6">
+
+            </div>
+
+            <div id="window4"  class="col-xs-6">
+
+            </div>
+
+        </section>
+        <!-- VIEWER SECTION END -->
+
+        <!-- SIDE PANE START -->
+        <section id="side-pane" class="col-xs-3">
+
+            <ul id="side-pane-tabs" class="nav nav-tabs">
+                <li role="presentation" class="active col-xs-6">
+                    <a 
+                        href="#segmentation" 
+                        role="tab" 
+                        id="segmentation-tab" 
+                        data-toggle="tab" 
+                        aria-controls="segmentation" 
+                        aria-expanded="true">
+                        SEGMENTATION
+                    </a>
+                </li>
+                <li role="presentation" class="col-xs-6">
+                    <a 
+                        href="#surgery" 
+                        role="tab" 
+                        id="surgery-tab" 
+                        data-toggle="tab" 
+                        aria-controls="segmentation" 
+                        aria-expanded="false">
+                        SURGICAL PLANNING
+                    </a>
+                </li>
+            </ul>
+
+            <div id="side-pane-tab-content" class="tab-content">
+                <div class="tab-pane fade active in" role="tabpanel" id="segmentation" aria-labelledby="segmentation-tab">
+                    
+                    <ul id="segmentation-tabs" class="nav nav-tabs">
+                        <li role="presentation" class="active col-xs-6">
+                            <a 
+                                href="#roi-segmentation" 
+                                role="tab" 
+                                id="roi-segmentation-tab" 
+                                data-toggle="tab" 
+                                aria-controls="roi-segmentation" 
+                                aria-expanded="true">
+                                ROI Segmentation
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div id="segmentation-tab-content" class="tab-content">
+                        <div class="tab-pane fade active in" role="tabpanel" id="roi-segmentation" aria-labelledby="roi-segmentation-tab">
+                            <table class="table">
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </div>
+
+                    <ul id="transparency-tabs" class="nav nav-tabs">
+                        <li role="presentation" class="active col-xs-6">
+                            <a 
+                                href="#transparency" 
+                                role="tab" 
+                                id="transparency-tab" 
+                                data-toggle="tab" 
+                                aria-controls="transparency" 
+                                aria-expanded="true">
+                                3D Transparency
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div id="transparency-tab-content" class="tab-content">
+                        <div class="tab-pane fade active in container-fluid" role="tabpanel" id="transparency" aria-labelledby="transparency-tab">
+                            <div class="col-xs-6"><a class="btn btn-default" href="#" role="button">HEALTHY LIVER</a></div>
+                            <div class="col-xs-6"><a class="btn btn-default" href="#" role="button">LESION</a></div>
+                        </div>
+
+                        <input type="range" name="points" min="20" max="100" step="20" value="40">
+                        <div class="container-fluid">
+                            <img class="slider-discretes" src="icons/slider-discrete.png" alt="">
+                            <img class="slider-discretes" src="icons/slider-discrete.png" alt="">
+                            <img class="slider-discretes" src="icons/slider-discrete.png" alt="">
+                            <img class="slider-discretes" src="icons/slider-discrete.png" alt="">
+                            <img class="slider-discretes" src="icons/slider-discrete.png" alt="">                            
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="col-xs-6"><a class="btn btn-default" href="#" role="button"><img src="icons/brush.png" alt=""></a></div>
+                        <div class="col-xs-6"><a class="btn btn-default" href="#" role="button"><img src="icons/region-growing.png" alt=""></a></div>
+                        <div class="col-xs-12"><a class="btn btn-default" href="#" role="button">APPROVE SEGMENTATION</a></div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" role="tabpanel" id="surgery" aria-labelledby="surgery-tab">
+                    <p>Tab2</p>
+                </div>
+            </div>
+
+
+            <!--<ul id="series-tabs" class="nav nav-tabs">
+                <li role="presentation" class="active col-xs-6">
+                    <a 
+                        href="#series" 
+                        role="tab" 
+                        id="series-tab" 
+                        data-toggle="tab" 
+                        aria-controls="series" 
+                        aria-expanded="true">
+                        CHOOSE SERIES
+                    </a>
+                </li>
+            </ul>
+
+            <div id="series-tab-content" class="tab-content">
+                <div class="tab-pane fade active in" role="tabpanel" id="series" aria-labelledby="series-tab">
+                    <table class="table">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+
+                </div>
+            </div>-->
+            
+        </section>
+        <!-- SIDE PANE END -->
+
+    </section>
+    <!-- MAIN CONTENT END -->
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
