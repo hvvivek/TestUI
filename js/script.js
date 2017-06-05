@@ -74,7 +74,7 @@ function onClickRegionGrow()
 }
 
 //Code for Approve Segmentation
-function showSegmentationTab()
+function approveSegmentation()
 {
     $('#side-pane-tabs a[href="#surgery"]').tab('show')
 }
