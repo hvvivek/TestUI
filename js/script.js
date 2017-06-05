@@ -1,7 +1,10 @@
 window.onload = addListeners;
+
+// Global Variables
 var prevX;
 var prevY;
 
+// Code for Draggable Pane
 function addListeners()
 {
     document.getElementById('draggable-pane').addEventListener('mousedown', mouseDown, false);
@@ -54,4 +57,18 @@ function divMove(e)
     {
         div.style.left =  100 + (e.clientX - prevX) + 'px';
     }
+}
+
+// Code for Brush
+function onClickBrush()
+{
+    var div = document.getElementById('draggable-pane');
+    div.style.visibility = 'visible';
+}
+
+// Code for Region Growing
+function onClickRegionGrow()
+{
+    var div = document.getElementById('draggable-pane');
+    div.style.visibility = 'visible';
 }
