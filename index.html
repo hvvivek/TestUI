@@ -12,6 +12,9 @@
 
     <!-- User Stylesheet for override -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Oxygen Font -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 </head>
 <body>
 
@@ -243,6 +246,33 @@
 
     </section>
     <!-- MAIN CONTENT END -->
+
+    <div id="draggable-pane" draggable="true">
+            <ul id="draggable-tabs" class="nav nav-tabs">
+                <li role="presentation" class="active col-xs-6">
+                    <a 
+                        href="#draggable" 
+                        role="tab" 
+                        id="draggable-tab" 
+                        data-toggle="tab" 
+                        aria-controls="draggable" 
+                        aria-expanded="true">
+                        Select Segment
+                    </a>
+                </li>
+            </ul>
+
+            <div id="draggable-tab-content" class="tab-content">
+                <div class="tab-pane fade active in" role="tabpanel" id="draggable" aria-labelledby="draggable-tab">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>  
+                  <div><img src="icons/navbar-close.png" alt=""></div>  
+                </div>
+            </div>
+    </div>
 
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
