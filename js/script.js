@@ -73,6 +73,12 @@ function onClickRegionGrow()
     div.style.visibility = 'visible';
 }
 
+//Code for Approve Segmentation
+function showSegmentationTab()
+{
+    $('#side-pane-tabs a[href="#surgery"]').tab('show')
+}
+
 // Code to dismiss Draggable Pane
 function dismissDraggablePane()
 {
