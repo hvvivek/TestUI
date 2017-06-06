@@ -3,35 +3,45 @@ window.onload = addListeners;
 // Global Variables
 var prevX;
 var prevY;
+var handler;
 
 // Code for Draggable Pane
 function addListeners()
 {
     document.getElementById('segmentation-draggable-pane').addEventListener('mousedown', mouseDown, false);
+    document.getElementById('examination-draggable-pane').addEventListener('mousedown', mouseDown, false);
     window.addEventListener('mouseup', mouseUp, false);
 }
 
 function mouseUp()
 {
-    window.removeEventListener('mousemove', divMove, true);
+    window.removeEventListener('mousemove', handler, true);
 }
 
 function mouseDown(e)
 {
-    window.addEventListener('mousemove', divMove, true);
+    var div = this;
+    handler = function( e )
+                    {
+                        divMove(e, div)
+                    };
+    window.addEventListener('mousemove', handler, true);
     prevX = e.clientX;
     prevY = e.clientY;
 }
 
-function divMove(e)
+function divMove(e, div)
 {
-    var div = document.getElementById('segmentation-draggable-pane');
+    e.preventDefault();
+    // var div = document.getElementById('segmentation-draggable-pane');
     div.style.position = 'absolute';
     var pos = -1;
 
     var topStr = div.style.top;
     var topInt = 0;
     pos = topStr.search('px');
+    console.log(div.style.top);
+    
     if( pos > 0 )
     {
         topInt = parseInt( topStr.replace('px','') );
@@ -42,6 +52,8 @@ function divMove(e)
     {
         div.style.top =  100 + (e.clientY - prevY) + 'px';
     }
+
+    console.log(div.style.top);
 
     var leftStr = div.style.left;
     var leftInt = 0;
@@ -73,6 +85,20 @@ function onClickRegionGrow()
     div.style.visibility = 'visible';
 }
 
+// Code for 2D Incision
+function onClickIncision()
+{
+    var div = document.getElementById('examination-draggable-pane');
+    console.log(div);
+    div.style.visibility = 'visible';
+}
+
+// Code for Segmentation Tab Click
+function onClickSegmentationTab()
+{
+    dismissExaminationDraggablePane();
+}
+
 //Code for Approve Segmentation
 function approveSegmentation()
 {
@@ -84,5 +110,12 @@ function approveSegmentation()
 function dismissSegmentationDraggablePane()
 {
     var div = document.getElementById('segmentation-draggable-pane');
+    div.style.visibility = 'hidden';
+}
+
+// Code to dismiss examination Draggable Pane
+function dismissExaminationDraggablePane()
+{
+    var div = document.getElementById('examination-draggable-pane');
     div.style.visibility = 'hidden';
 }

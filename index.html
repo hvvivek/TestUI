@@ -88,7 +88,8 @@
                         id="segmentation-tab" 
                         data-toggle="tab" 
                         aria-controls="segmentation" 
-                        aria-expanded="true">
+                        aria-expanded="true"
+                        onclick="onClickSegmentationTab()">
                         SEGMENTATION
                     </a>
                 </li>
@@ -265,7 +266,7 @@
 
                     <div id="resection-tab-content" class="tab-content">
                         <div class="tab-pane fade active in container-fluid" role="tabpanel" id="resection" aria-labelledby="resection-tab">
-                            <div class="col-xs-6 col-xs-offset-3"><a class="btn btn-default" href="#" role="button">2D INCISION</a></div>
+                            <div class="col-xs-6 col-xs-offset-3"><a class="btn btn-default" onclick="onClickIncision()" href="#" role="button"><img src="icons/incision-2d-icon.png" alt="">2D INCISION</a></div>
                         </div>
                     </div>
                     <!-- RESECTION PANEL END -->
@@ -293,9 +294,9 @@
 
                     <div id="examination-tab-content" class="tab-content">
                         <div class="tab-pane fade active in container-fluid" role="tabpanel" id="examination" aria-labelledby="examination-tab">
-                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button">ADD TEXT</a></div>
-                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button">ADD ARROW</a></div>
-                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button">RULER</a></div>
+                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button"><img src="icons/add-text-tool.png" alt=""><p>ADD TEXT</p></a></div>
+                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button"><img src="icons/add-arrow-tool.png" alt=""><p>ADD ARROW</p></a></div>
+                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button"><img src="icons/ruler-tool.png" alt=""><p>RULER</p></a></div>
                         </div>
                     </div>
                     <!-- EXAMINATION PANEL END -->
@@ -387,29 +388,9 @@
     </div>
 
     <div id="examination-draggable-pane">
-            <ul id="examination-draggable-tabs" class="nav nav-tabs">
-                <li role="presentation" class="active col-xs-6">
-                    <a 
-                        href="#examination-draggable" 
-                        role="tab" 
-                        id="examination-draggable-tab" 
-                        data-toggle="tab" 
-                        aria-controls="examination-draggable" 
-                        aria-expanded="true">
-                        Select Segment
-                    </a>
-                </li>
-            </ul>
-
-            <div id="examination-draggable-tab-content" class="tab-content">
-                <div class="tab-pane fade active in" role="tabpanel" id="examination-draggable" aria-labelledby="examination-draggable-tab">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>  
-                  <div><img src="icons/navbar-close.png" alt=""></div>  
-                </div>
+            <div class="container-fluid">
+                        <div class="col-xs-6" id="btn-brush"><a class="btn btn-default" href="#" role="button"><img src="icons/add-text-tool.png" alt="">ADD TEXT</a></div>
+                        <div class="col-xs-6" id="btn-region-grow"><a class="btn btn-default" href="#" role="button"><img src="icons/add-arrow-tool.png" alt="">ADD ARROW</a></div>
             </div>
     </div>
 

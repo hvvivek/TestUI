@@ -536,6 +536,11 @@ body {
     text-align: center;
 }
 
+#resection img
+{
+    margin-right: 1.5em;
+}
+
 #resection-tabs
 {
 }
@@ -593,6 +598,7 @@ body {
 {
 }
 
+
 #examination-tabs>li
 {
     padding: 0px;
@@ -632,6 +638,50 @@ body {
     margin-top: 7px;
 }
 
+#examination div:nth-of-type(3)>.btn-default>img
+{
+    float: left;
+    margin-left: 0.7em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    max-height: 2.5em;
+}
+
+#examination div:nth-of-type(3)>.btn-default>p
+{
+    float: left;
+}
+
+#examination div:nth-of-type(2)>.btn-default>img
+{
+    float: left;
+    margin-left: 0.1em;
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    max-height: 2.2em;
+}
+
+#examination div:nth-of-type(1)>.btn-default>img
+{
+    float: left;
+    margin-left: 0.3em;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    max-height: 2em;
+}
+
+#examination .btn-default>p
+{
+    margin-top: 1.5em;
+}
+
+#examination .btn-default
+{
+    font-size: 0.7em;
+    height: 4em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
 #examination-tab-content>div>div
 {
     padding: 0px 5px 0px 5px;
@@ -941,6 +991,48 @@ input[type=range]:focus::-ms-fill-upper {
 #examination-draggable-tab-content>div>div>a
 {
     width: 100%;
+}
+
+#examination-draggable-pane .btn-default
+{
+    border-radius: 0px;
+    padding: 1.3em 0.5em 1.3em 0.5em;
+    color: #FFFFFF;
+    background-color: #00514B;
+    background-image: none;
+    border: none;
+    font-size: 0.8em;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+#examination-draggable-pane .btn-default:active
+{
+    background-color: #013532;
+}
+
+#examination-draggable-pane .btn-default>img
+{
+    max-height: 1.7em;
+    margin-right: 0.7em;
+}
+
+#examination-draggable-pane
+{
+    background-color: #003F3D;
+    padding-top: 1em;
+    padding-bottom: 1em;    
+}
+
+#examination-draggable-pane a
+{
+    width: 10em;
+}
+
+#examination-draggable-pane div
+{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 /* DRAGGABLE PANE END */
