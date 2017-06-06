@@ -77,6 +77,7 @@ function onClickRegionGrow()
 function approveSegmentation()
 {
     $('#side-pane-tabs a[href="#surgery"]').tab('show')
+    dismissDraggablePane();
 }
 
 // Code to dismiss Draggable Pane
