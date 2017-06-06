@@ -127,6 +127,7 @@ body {
 #side-pane .btn-default>img
 {
     max-height: 2em;
+    margin-right: 1em;
 }
 
 #side-pane .nav-tabs
