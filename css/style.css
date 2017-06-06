@@ -98,7 +98,7 @@ body {
 /* SIDE PANE START */
 #side-pane
 {
-    margin-top: 1.2em;
+    margin-top: 0em;
     padding: 0px;
     padding-right: 0.5px;
 }
@@ -404,6 +404,7 @@ body {
 }
 
 
+/* SURGICAL PLANNING PANE START */
 
 #hepatic-tabs
 {
@@ -526,6 +527,127 @@ body {
     color: #FFFFFF;
     text-align: center;
 }
+
+#resection-tabs
+{
+}
+
+#resection-tabs>li
+{
+    padding: 0px;
+    margin-top:1em;
+
+}
+
+#resection-tabs>li>a
+{
+    font-size: 0.8em;
+    border: none;
+    border-radius: 0px;
+    float: left;
+}
+
+#resection-tabs>li.active>a
+{
+    font-size: 0.8em;
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+    background-color: #003F3D;
+    color: #FFFFFF;
+}
+
+#resection-tab-content
+{
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #003F3D;
+}
+
+#resection-tab-content>div
+{
+    padding: 0px;
+    margin-top: 7px;
+}
+
+#resection-tab-content>div>div
+{
+    padding: 0px 5px 0px 5px;
+}
+#resection-tab-content>div>div>a
+{
+    width: 100%;
+}
+
+
+#examination-tabs
+{
+}
+
+#examination-tabs>li
+{
+    padding: 0px;
+    margin-top:1em;
+
+}
+
+#examination-tabs>li>a
+{
+    font-size: 0.8em;
+    border: none;
+    border-radius: 0px;
+    float: left;
+}
+
+#examination-tabs>li.active>a
+{
+    font-size: 0.8em;
+    border: none;
+    border-radius: 0px;
+    text-align: center;
+    background-color: #003F3D;
+    color: #FFFFFF;
+}
+
+#examination-tab-content
+{
+    padding: 1em;
+    background-color: #003F3D;
+    margin-bottom: 1em;
+}
+
+#examination-tab-content>div
+{
+    padding: 0px;
+    margin-top: 7px;
+}
+
+#examination-tab-content>div>div
+{
+    padding: 0px 5px 0px 5px;
+}
+#examination-tab-content>div>div>a
+{
+    width: 100%;
+}
+
+#btn-generate-report
+{
+    font-size: 1.2em;
+}
+
+#btn-generate-report>a
+{
+    margin-bottom: 1em;
+}
+
+#btn-save-cutting-plan
+{
+    font-size: 1.2em;
+}
+/* SURGICAL PLANNING PANE END */
+
+
 /* SIDE PANE END */
 
 
@@ -563,12 +685,13 @@ input[type=range]::-ms-track {
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 2em;
+  height: 1.5em;
   width: 3%;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;  
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;  
+  /*background: #00514B;*/
   background: #00514B;
   cursor: pointer;
   /*margin-left: -5px;*/
@@ -801,10 +924,10 @@ input[type=range]:focus::-ms-fill-upper {
 /* DRAGGABLE PANE END */
 
 /* Custom Code for Side Pane Start */
-@media (min-height: 800px) {
+@media (min-height: 900px) {
     #side-pane
     {
-        min-height: 90vh;
+        min-height: 96vh;
         background-color: #013532;
     }
 
@@ -812,7 +935,8 @@ input[type=range]:focus::-ms-fill-upper {
     {
         position: absolute;
         width: 98%;
-        bottom: 2em;
+        bottom: 1em;
+        font-size: 1.5em;
     }
 
     #segmentation>div:nth-of-type(3)>div:nth-of-type(3)>a
@@ -822,8 +946,29 @@ input[type=range]:focus::-ms-fill-upper {
 
     #transparency-tab-content
     {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
+        padding-bottom: 2em;
     }
+
+    #btn-save-cutting-plan
+    {
+        font-size: 1.5em;
+    }
+
+    #btn-generate-report
+    {
+        position: absolute;
+        width: 98%;
+        bottom: 1em;
+        font-size: 1.5em;
+    }
+
+    #btn-generate-report>a
+    {
+        margin-bottom: 0;
+    }
+
+
 }
 /* Custom Code for Side Pane End */
 

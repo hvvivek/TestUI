@@ -29,7 +29,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><img class="navbar-icons" src="icons/navbar-undo-tool.png"></a></li>
                 <li><a href="#"><img class="navbar-icons" src="icons/navbar-redo-tool.png"></a></li>
-                <li><a href="#"><img class="navbar-icons" src="icons/navbar-undo-list.png"></a></li>
                 <li><a href="#"><img class="navbar-icons" src="icons/navbar-refresh.png"></a></li>
             </ul>
 
@@ -37,7 +36,7 @@
                 <li><a href="#"><img class="navbar-icons" src="icons/navbar-inspect-tool.png"></a></li>
                 <li><a href="#"><img class="navbar-icons" src="icons/navbar-pan-tool.png"></a></li>
                 <li><a href="#"><img class="navbar-icons" src="icons/navbar-zoom-tool.png"></a></li>
-                <li><a href="#"><img class="navbar-icons" src="icons/navbar-zoom-fit.png"></a></li>
+                <li><a href="#"><img class="navbar-icons" src="icons/navbar-rotate-tool.png"></a></li>
             </ul>
 
             <ul id="window-layout" class="nav navbar-nav navbar-right">
@@ -183,6 +182,7 @@
 
                 <div class="tab-pane fade" role="tabpanel" id="surgery" aria-labelledby="surgery-tab">
                     
+                    <!-- HEPATIC VOLUMETRY PANEL START -->
                     <ul id="hepatic-tabs" class="nav nav-tabs">
                         <li role="presentation" class="active col-xs-6">
                             <a 
@@ -241,6 +241,66 @@
 
                         </div>
                     </div>
+                    <!-- HEPATIC VOLUMETRY PANEL END -->
+
+                    <!-- RESECTION PANEL START -->
+                    <ul id="resection-tabs" class="nav nav-tabs">
+                        <li role="presentation" class="active col-xs-6">
+                            <a 
+                                href="#resection" 
+                                role="tab" 
+                                id="resection-tab" 
+                                data-toggle="tab" 
+                                aria-controls="resection" 
+                                aria-expanded="true">
+                                Resection
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div id="resection-tab-content" class="tab-content">
+                        <div class="tab-pane fade active in container-fluid" role="tabpanel" id="resection" aria-labelledby="resection-tab">
+                            <div class="col-xs-6 col-xs-offset-3"><a class="btn btn-default" href="#" role="button">2D INCISION</a></div>
+                        </div>
+                    </div>
+                    <!-- RESECTION PANEL END -->
+
+                    <!-- SAVE CUTTING PLAN BUTTON START -->
+                    <div  id="btn-save-cutting-plan" class="container-fluid">
+                        <a class="btn btn-default col-xs-12" href="#" role="button">SAVE CUTTING PLAN</a>
+                    </div>
+                    <!-- SAVE CUTTING PLAN BUTTON END -->
+
+                    <!-- EXAMINATION PANEL START -->
+                    <ul id="examination-tabs" class="nav nav-tabs">
+                        <li role="presentation" class="active col-xs-6">
+                            <a 
+                                href="#examination" 
+                                role="tab" 
+                                id="examination-tab" 
+                                data-toggle="tab" 
+                                aria-controls="examination" 
+                                aria-expanded="true">
+                                Examination
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div id="examination-tab-content" class="tab-content">
+                        <div class="tab-pane fade active in container-fluid" role="tabpanel" id="examination" aria-labelledby="examination-tab">
+                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button">ADD TEXT</a></div>
+                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button">ADD ARROW</a></div>
+                            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button">RULER</a></div>
+                        </div>
+                    </div>
+                    <!-- EXAMINATION PANEL END -->
+
+                    <!-- GENERATE REPORT BUTTON START -->
+                    <div id="btn-generate-report" class="container-fluid">
+                        <a class="btn btn-default col-xs-12" href="#" role="button">GENERATE REPORT</a>
+                    </div>
+                    <!-- GENERATE REPORT BUTTON END -->
+
                 </div>
             </div>
 
