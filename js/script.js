@@ -7,7 +7,7 @@ var prevY;
 // Code for Draggable Pane
 function addListeners()
 {
-    document.getElementById('draggable-pane').addEventListener('mousedown', mouseDown, false);
+    document.getElementById('segmentation-draggable-pane').addEventListener('mousedown', mouseDown, false);
     window.addEventListener('mouseup', mouseUp, false);
 }
 
@@ -25,7 +25,7 @@ function mouseDown(e)
 
 function divMove(e)
 {
-    var div = document.getElementById('draggable-pane');
+    var div = document.getElementById('segmentation-draggable-pane');
     div.style.position = 'absolute';
     var pos = -1;
 
@@ -62,14 +62,14 @@ function divMove(e)
 // Code for Brush
 function onClickBrush()
 {
-    var div = document.getElementById('draggable-pane');
+    var div = document.getElementById('segmentation-draggable-pane');
     div.style.visibility = 'visible';
 }
 
 // Code for Region Growing
 function onClickRegionGrow()
 {
-    var div = document.getElementById('draggable-pane');
+    var div = document.getElementById('segmentation-draggable-pane');
     div.style.visibility = 'visible';
 }
 
@@ -77,12 +77,12 @@ function onClickRegionGrow()
 function approveSegmentation()
 {
     $('#side-pane-tabs a[href="#surgery"]').tab('show')
-    dismissDraggablePane();
+    dismissSegmentationDraggablePane();
 }
 
-// Code to dismiss Draggable Pane
-function dismissDraggablePane()
+// Code to dismiss segmentation Draggable Pane
+function dismissSegmentationDraggablePane()
 {
-    var div = document.getElementById('draggable-pane');
+    var div = document.getElementById('segmentation-draggable-pane');
     div.style.visibility = 'hidden';
 }
